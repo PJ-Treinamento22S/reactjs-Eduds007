@@ -8,7 +8,7 @@ const Header = () => {
         <S.HeaderContent>
           <S.HeaderProfile>
             <S.HeaderImg src={Image}></S.HeaderImg>
-            <S.HeaderText>olá tudo bem eu me chamdo eduardo</S.HeaderText>
+            <S.HeaderText>Sua Conta</S.HeaderText>
           </S.HeaderProfile>
 
           <S.NavDiv>
