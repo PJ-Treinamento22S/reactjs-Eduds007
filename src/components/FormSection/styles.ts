@@ -1,4 +1,10 @@
+
 import styled from "styled-components";
+
+
+interface WordCountProps {
+  isRed: boolean
+}
 
 export const PostDiv = styled.div`
     display: flex;
@@ -33,7 +39,9 @@ export const FilesDiv = styled.div`
 export const FileImg = styled.img `
 `
 
-export const FormArea = styled.textarea`
+
+
+export const FormArea = styled.textarea<WordCountProps>`
   height: 400px;
   width: 280px;
   border-radius: 30px;
@@ -45,6 +53,7 @@ export const FormArea = styled.textarea`
   padding: 30px;
   display: flex;
   flex: initial;
+  color: ${(props) => (props.isRed ? "red" : "#f6f6f6")};
 `;
 
 export const PublishButton = styled.button`
@@ -57,5 +66,10 @@ export const PublishButton = styled.button`
   border-radius: 15px;
 `;
 
-export const WordCount = styled.p `
+
+
+
+export const WordCount = styled.p<WordCountProps> `
+  color: ${(props) => props.isRed? 'red' : '#f6f6f6' }
+  
 `

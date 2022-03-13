@@ -1,8 +1,9 @@
 import React from "react";
 
-import Header from "./components/header"
-import Posts from './components/posts'
-import Form from "./components/form_section";
+import Header from "./components/Header"
+import Pius from './components/Pius'
+import Form from "./components/FormSection";
+
 
 import '../src/App.css'
 
@@ -12,7 +13,7 @@ function App() {
     <div className="Container">
       
         <Header></Header>
-        <Posts></Posts>
+        <Pius></Pius>
         <Form></Form>
       
     </div>

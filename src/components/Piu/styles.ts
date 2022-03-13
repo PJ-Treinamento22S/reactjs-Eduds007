@@ -1,16 +1,5 @@
 import styled from "styled-components";
 
-export const MainDiv = styled.div`
-  display: flex;
-  flex: 50%;
-  align-items: center;
-  text-align: center;
-  flex-direction: column-reverse;
-  overflow-y: scroll;
-  height: 100%;
-`;
-
-
 export const PostDiv = styled.div`
   background-color: #003566;
   padding: 30px 30px 0px 30px;
@@ -26,9 +15,7 @@ export const PostProfile = styled.div`
   border-radius: 45px;
 `;
 
-export const ProfilePic = styled.img`
-  
-`;
+export const ProfilePic = styled.img``;
 export const ProfileName = styled.p`
   display: flex;
   margin-left: 10px;
@@ -38,9 +25,7 @@ export const ProfileName = styled.p`
   margin-right: 8px;
 `;
 
-export const Verified = styled.img `
-
-`
+export const Verified = styled.img``;
 export const PostReactions = styled.div`
   display: flex;
   margin-top: 16px;
@@ -54,5 +39,4 @@ export const ReactionsImg = styled.img`
   margin-bottom: 8px;
 `;
 
-export const PostText = styled.p `
-`
+export const PostText = styled.p``;
