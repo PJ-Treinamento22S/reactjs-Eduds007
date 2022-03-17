@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 const getAPI = () => {
-    const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NDcxOTMzODIsImV4cCI6MTY0NzI3OTc4Miwic3ViIjoiOWUyMzIzZjEtMGQ0MS00ZWI1LWI4NDAtMTAzMGZiZGQ2ZTdmIn0.i048J9bfmxB7WplEB7MmEip0b75Qpw1UJrJVAh7i5mY"
+    const token =
+      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NDc0NjA4NzAsImV4cCI6MTY0NzU0NzI3MCwic3ViIjoiZTE3NjNhYzgtMmQwOS00MWI3LTkzYjctZDhiY2M3ZjJkZDcyIn0.jfwXAF1qF61BnNKqL4FFE9f0X0uRN1cJMSUC1xA9MGE";
     const api = axios.create({baseURL: "https://piupiuwer.polijrinternal.com",
     });
 

@@ -10,37 +10,20 @@ import api from "../../config/api";
 import * as S from "./styles";
 import {Piu} from '../../interfaces'
 
+interface PiusProps {
+  pius: Piu[]
+}
 
 
-
-const Pius = () => {
-
-  const [pius, setPius] = useState([] as Piu[])
-
-
-  useEffect(()=> {
-    const getPiu = async () => {
-      const response = await api.get('/pius')
-      setPius(response.data)
-      
-      
-  
-    }
-    getPiu()
-  }, [])
-
-  console.log(pius)
-
-  
+const Pius = ({pius}:PiusProps) => {
 
     return (
       <>
         <S.MainDiv>
           
-          <PiuPost/>
-
-          
-
+          {pius.map((piu) => {
+            return <PiuPost key={piu.id} piu={piu}  />;
+          })}
         </S.MainDiv>
       </>
     );
